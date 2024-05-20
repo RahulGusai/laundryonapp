@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - '80:80'
+    environment:
+      MYSQL_HOST: laundryonapp-prod-db-mysql-do-user-14545692-0.c.db.ondigitalocean.com
+      MYSQL_ROOT_USERNAME: doadmin
+      MYSQL_ROOT_PASSWORD: AVNS_mJG-m3iDLQ1CDo2jmXu
+      MYSQL_DATABASE: laundry
+      MYSQL_PORT: 25060
+    volumes:
+      - /etc/cred:/etc/cred
